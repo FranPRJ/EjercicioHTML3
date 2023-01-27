@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="formulario">
+        <div>
+            <label> Nombre usuario </label>
+            <input type="text" name="nombre usuario"/>
+        </div>
+        <div>
+            <label> Nombre </label>
+            <input type="text" name="nombre"/>
+        </div>
+        <div>
+            <label> Apellidos </label>
+            <input type="text" name="apellidos"/>
+        </div>
+        <div>
+            <label> Password </label>
+            <input type="password" name="contraseña"/>
+        </div>
+        <div>
+            <label> Sexo </label>
+            <select name="sexo">
+                <option value="masculino">M</option>
+                <option value="femenino">F</option>
+                <option value="otros">O</option>
+            </select>
+        </div>
+        <div>
+            <label> Fecha de nacimiento </label>
+            <input type="date" name="fechanac"/>
+        </div>
+        <div>
+            <label> Color favorito </label>
+            <input type="text" name="color"/>
+        </div>
+    </form>
+    <script>
+        var labels = document.getElementsByTagName("label");
+        for (var i=0; i<labels.length; i++)
+        {          
+          labels[i].addEventListener('click', function() {
+            console.log('click')
+          });
+        }
+      </script>
+</body>
+</html>
